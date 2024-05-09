@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+#  springboot-app:
+#    container_name: jobms-app
+#    image: jobms-app
+#    restart: always
+#    build: .
+#    ports:
+#      - "8082:8082"
+
+
+  db:
+    container_name: postgresdb
+    image: postgres
+
+    environment:
+      POSTGRES_USER: springtech
+      POSTGRES_PASSWORD: springtech
+      POSTGRES_DB: job
+    ports:
+      - "5432:5432"
+
+
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: springtech@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: springtech
+    ports:
+      - "5050:80"
