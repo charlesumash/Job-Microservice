@@ -14,8 +14,10 @@ public class JobDTO {
     private String minSalary;
     private String maxSalary;
     private String location;
+
     // company object
     private Company company;
+
     // review object
     private List<Review> reviews;
 }
