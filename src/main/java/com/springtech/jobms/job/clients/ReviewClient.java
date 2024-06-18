@@ -10,9 +10,6 @@ import java.util.List;
 
 @FeignClient(name = "REVIEW-SERVICE")
 public interface ReviewClient {
-//    @GetMapping("/reviews")
-//    public List<Review> getReviews(@RequestParam("companyId") Long companyId);
-
     @GetMapping("/reviews")
     public ResponseEntity<List<Review>> findReviewsByCompanyId(@RequestParam Long companyId);
 }

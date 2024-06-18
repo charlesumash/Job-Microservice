@@ -30,3 +30,16 @@ services:
       PGADMIN_DEFAULT_PASSWORD: springtech
     ports:
       - "5050:80"
+
+  zipkin:
+    container_name: zipkin
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
