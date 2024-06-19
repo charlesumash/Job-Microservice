@@ -111,7 +111,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>jobms-app</finalName>
+		<finalName>job-ms</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
