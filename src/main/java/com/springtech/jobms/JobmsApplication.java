@@ -7,7 +7,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableFeignClients
 public class JobmsApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(JobmsApplication.class, args);
 	}
